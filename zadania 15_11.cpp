@@ -1,8 +1,22 @@
-1. Oblicz średnią prędkość pojazdu
-
+/* 1. Oblicz średnią prędkość pojazdu
 Wczytaj od użytkownika dystans (w kilometrach) i czas podróży (w godzinach).
 Oblicz średnią prędkość i wypisz wynik w km/h.
+*/
+#include <iostream>
+using namespace std;
 
+int main()
+{
+double dystans, czas, srednia;
+cout<<"Podaj dystans w km: ";
+cin>>dystans;
+
+cout<<"Podaj czas w godzinach ";
+cin>>czas;
+srednia=dystans/czas;
+cout<<"Srednia predkosc wynosi: "<<srednia<<" km/h";
+
+}
 2. Oblicz pole prostokąta i przekątną
 
 Program wczytuje długość i szerokość prostokąta, a następnie oblicza jego pole i długość przekątnej.
