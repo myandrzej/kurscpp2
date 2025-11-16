@@ -113,6 +113,26 @@ int main()
 	}
 /*
 6. Oblicz ilość farby potrzebnej do pomalowania pokoju
-*/
+
 Program wczytuje długość i wysokość pokoju (w metrach), oraz informację, ile metrów kwadratowych można pomalować 1 litrem farby.
 Oblicz, ile litrów farby trzeba kupić.
+*/
+#include<iostream>
+
+using namespace std;
+int main()
+{
+double dlugosc, wysokosc, wydajnosc;
+cout<<"Podaj dlugosc: ";
+cin>>dlugosc;
+cout<<"Podaj wysokosc: ";
+cin>>wysokosc;
+cout<<"Ile m2 mozna pomalowac litrem farby? ";
+cin>>wydajnosc;
+
+double powierzchnia=dlugosc*wysokosc;
+double litry=powierzchnia/wydajnosc;
+cout<<"Powierzchnia scian: " <<powierzchnia <<" m2" <<endl;
+cout<<"Potrzebna ilosc farby: " <<litry <<" litrow" <<endl;
+	
+	}
