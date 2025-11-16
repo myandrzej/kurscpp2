@@ -59,10 +59,31 @@ cout<<"Minuty: "<<minuty<<endl;
 
 }
 
-4. Oblicz miesięczne zużycie energii
+/*4. Oblicz miesięczne zużycie energii
 
 Program wczytuje moc urządzenia (w watach) oraz liczbę godzin pracy dziennie.
 Oblicz koszt miesięcznego zużycia energii, przyjmując cenę 1 kWh od użytkownika.
+*/
+#include<iostream>
+
+using namespace std;
+int main()
+{
+    double moc, godziny, cena=0.62;
+    cout<<"Podaj moc urzadzenia (W): ";
+    cin>>moc;
+    cout<<"Podaj liczbe godzin: ";
+    cin>>godziny;
+    
+    double moc_kw=moc/1000;
+    double zuzycie_dzienne=moc_kw*godziny;
+    double zuzycie_miesieczne=zuzycie_dzienne*30;
+    double koszt=zuzycie_miesieczne*cena;
+    cout<<"Miesieczne zuzycie energii: " <<zuzycie_miesieczne << "kWh"<<endl;
+    cout<<"Miesieczny koszt: "<<koszt<< "zl" <<endl;
+
+	
+	}
 
 /*5. Oblicz należny podatek dochodowy
 
@@ -90,7 +111,8 @@ int main()
 	}
 	
 	}
+/*
 6. Oblicz ilość farby potrzebnej do pomalowania pokoju
-
+*/
 Program wczytuje długość i wysokość pokoju (w metrach), oraz informację, ile metrów kwadratowych można pomalować 1 litrem farby.
 Oblicz, ile litrów farby trzeba kupić.
