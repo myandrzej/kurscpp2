@@ -39,9 +39,25 @@ cout<<"Dlugosc przekatnej: "<<przekatna <<endl;
 
 }
 
-3. Przeliczanie sekund na godziny, minuty i sekundy
+/*3. Przeliczanie sekund na godziny, minuty i sekundy
 
 Wczytaj liczbę sekund i oblicz, ile to godzin, minut i sekund.
+*/
+#include <iostream>
+#include <math.h>
+using namespace std;
+
+int main()
+{
+int sekundy, godziny, minuty;
+cout<<"Podaj liczbe sekund: ";
+cin>>sekundy;
+godziny=sekundy/3600;
+minuty=sekundy/60;
+cout<<"Godziny: "<<godziny<<endl;
+cout<<"Minuty: "<<minuty<<endl;
+
+}
 
 4. Oblicz miesięczne zużycie energii
 
