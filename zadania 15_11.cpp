@@ -17,9 +17,27 @@ srednia=dystans/czas;
 cout<<"Srednia predkosc wynosi: "<<srednia<<" km/h";
 
 }
-2. Oblicz pole prostokąta i przekątną
 
+/*2. Oblicz pole prostokąta i przekątną
 Program wczytuje długość i szerokość prostokąta, a następnie oblicza jego pole i długość przekątnej.
+*/
+#include <iostream>
+#include <math.h>
+using namespace std;
+
+int main()
+{
+double dlugosc, szerokosc, pole, przekatna;
+cout<<"Podaj dlugosc boku prostokata: ";
+cin>>dlugosc;
+cout<<"Podaj szerokosc prostokata: ";
+cin>>szerokosc;
+pole=dlugosc*szerokosc;
+przekatna = sqrt(dlugosc*dlugosc+szerokosc*szerokosc);
+cout<<"Pole prostokata: "<<pole <<endl;
+cout<<"Dlugosc przekatnej: "<<przekatna <<endl;
+
+}
 
 3. Przeliczanie sekund na godziny, minuty i sekundy
 
