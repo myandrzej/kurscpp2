@@ -64,14 +64,32 @@ cout<<"Minuty: "<<minuty<<endl;
 Program wczytuje moc urządzenia (w watach) oraz liczbę godzin pracy dziennie.
 Oblicz koszt miesięcznego zużycia energii, przyjmując cenę 1 kWh od użytkownika.
 
-5. Oblicz należny podatek dochodowy
+/*5. Oblicz należny podatek dochodowy
 
 Wczytaj kwotę dochodu użytkownika i oblicz podatek wg uproszczonego wzoru:
 
 jeśli dochód ≤ 30 000 zł → podatek 12%,
 
 jeśli dochód > 30 000 zł → podatek 12% od 30 000 zł + 32% od nadwyżki.
+ */
+  #include<iostream>
 
+using namespace std;
+int main()
+{
+	int dochod, min = 30000;
+	cout << "ile zarabiasz miesiecznie?";
+	cin >> dochod;
+	int nadwyzka = (dochod - min);
+	if (dochod <= min) {
+		cout << "po podatku dochod wynosi:" << dochod * 0.12;
+	}
+	else  {
+	    cout << "po podatku dochod wynosi" << (min * 0.12) + (nadwyzka * 0.32);
+
+	}
+	
+	}
 6. Oblicz ilość farby potrzebnej do pomalowania pokoju
 
 Program wczytuje długość i wysokość pokoju (w metrach), oraz informację, ile metrów kwadratowych można pomalować 1 litrem farby.
