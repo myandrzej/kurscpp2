@@ -1,0 +1,27 @@
+//Wczyta od użytkownika 5 liczb całkowitych do tablicy i wypisze je w jednej linii.
+
+#include <iostream>
+using namespace std;
+
+
+int main()
+{
+    
+int tab[5];
+
+cout<<"Podaj 5 liczb calkowitych: "<<endl;
+for (int i=0; i<5; i++)
+{
+  cin>>tab[i];  
+}
+
+cout<<"Wpisane liczby: ";
+
+for (int i=0; i<5; i++)
+{
+    cout<<tab[i] << " ";
+  
+}
+cout<<endl;
+    return 0;
+}
